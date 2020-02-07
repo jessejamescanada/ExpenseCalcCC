@@ -1,0 +1,224 @@
+:root{
+  --box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,.24)
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+  margin: 30px auto;
+  width: 500px;
+}
+
+h1{ 
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.h3NewTrans{
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4{
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.incomeExpenseCont{
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.incomeExpenseCont > div{
+  flex: 1;
+  text-align: center;
+}
+
+.incomeExpenseCont > div:first-of-type{
+  border-right: 1px solid #dedede;
+}
+
+.incomeExpenseList{
+  background-color: #f7f7f7;;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.incomeExpenseList > div {
+  flex: 1;
+  text-align: center;
+}
+/* .incomeExpenseList > div:first-of-type {
+  border-right: 1px solid #dedede;
+} */
+
+
+.money{
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus{
+  color: #2ecc72;
+}
+
+.money.minus{
+  color: #c0391b
+}
+
+label{
+  display: inline-block;
+  margin: 10px 0;
+  margin-left: 5px;
+}
+
+input[type="text"], input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;  
+}
+
+.btn{
+  cursor: pointer;
+  background-color: #62aef575;
+  box-shadow: var(--box-shadow);
+  color: white;
+  border: none;
+  padding: 10px;
+  display: block;
+  margin: 10px 0 30px;
+  width: 100%;
+  font-size: 16px;
+}
+.btn:hover{
+  background-color: rgba(20, 20, 20, 0.829);
+  color: white;
+}
+
+.btn:focus, .delete-btn:focus{
+  outline: 0;
+}
+
+.list{
+  
+  padding: 0;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+
+li.minus, li.plus{
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  padding: 3px 5px;
+  list-style-type: none;;
+  margin: 3px 0;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+li.minus{
+  border-right: 5px solid red;
+  border-bottom: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+  
+}
+
+li.plus{
+  border-right: 5px solid rgb(4, 233, 4);
+  border-bottom: 1px solid rgb(4, 233, 4) ;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.delete-btn{
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-105%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+li.minus:hover .delete-btn{
+  opacity: 1;
+}
+li.plus:hover .delete-btn{
+  opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+@media(max-width: 600px){
+  .container{
+    width: 90%;
+  }
+  h1{
+    font-size: 24px;
+  margin-top: 20px;
+  }
+  #balance{
+    margin-top: 0;
+  }
+}
+
+#clearBTN:hover{
+  background-color: #62aef5bd;
+}
+#sortBTN{
+  margin-top: -15px;
+  background-color: rgba(137, 43, 226, 0.26);
+}
+
+#sortBTN:hover{
+  background-color: rgba(137, 43, 226, 0.616);
+}
+
