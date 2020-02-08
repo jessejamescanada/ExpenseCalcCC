@@ -109,7 +109,7 @@ input[type="text"], input[type="number"] {
 .btn{
   border-radius: 5px;
   cursor: pointer;
-  background-color: #79a6fbb9;
+  background-color: #EDBDA1;
   box-shadow: var(--box-shadow);
   color: rgb(255, 255, 255);
   border: none;
@@ -120,7 +120,7 @@ input[type="text"], input[type="number"] {
   font-size: 16px;
 }
 .btn:hover{
-  background-color: rgba(98, 174, 245, 0.534);
+  background-color: rgba(237, 189, 161, 0.747);
   color: white;
 }
 
@@ -147,11 +147,11 @@ input[type="text"], input[type="number"] {
 }
 #sortBTN{
   margin-top: -15px;
-  background-color: rgba(53, 53, 53, 0.705);
+  background-color: #938ECE;
 }
 
 #sortBTN:hover{
-  background-color: rgba(51, 51, 51, 0.616);
+  background-color: rgba(147, 142, 206, 0.699);
 }
 
 
