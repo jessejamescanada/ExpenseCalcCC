@@ -27,6 +27,7 @@ h1{
   margin: 0;
 }
 
+
 .h3NewTrans{
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
@@ -45,6 +46,7 @@ h4{
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  border-radius: 2px;
 }
 
 .incomeExpenseCont > div{
@@ -61,7 +63,7 @@ h4{
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
-  
+  border-radius: 2px;
   justify-content: space-between;
   margin: 20px 0;
 }
@@ -105,10 +107,11 @@ input[type="text"], input[type="number"] {
 }
 
 .btn{
+  border-radius: 5px;
   cursor: pointer;
-  background-color: #62aef575;
+  background-color: #79a6fbb9;
   box-shadow: var(--box-shadow);
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px;
   display: block;
@@ -117,13 +120,40 @@ input[type="text"], input[type="number"] {
   font-size: 16px;
 }
 .btn:hover{
-  background-color: rgba(20, 20, 20, 0.829);
+  background-color: rgba(98, 174, 245, 0.534);
   color: white;
 }
 
-.btn:focus, .delete-btn:focus{
+.btn:focus{
+  outline: 0;
+  position: relative;
+  animation-name: btnClick;
+  animation-duration: .1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes btnClick{
+  0% {left: 0px; top: 0px}
+  50% {left: 3px; top: 3px}
+  100% {left: 0px; top: 0px}
+}
+
+.delete-btn:focus{
   outline: 0;
 }
+
+#clearBTN:hover{
+  background-color: #62aef5bd;
+}
+#sortBTN{
+  margin-top: -15px;
+  background-color: rgba(53, 53, 53, 0.705);
+}
+
+#sortBTN:hover{
+  background-color: rgba(51, 51, 51, 0.616);
+}
+
 
 .list{
   
@@ -210,15 +240,4 @@ input[type=number] {
   }
 }
 
-#clearBTN:hover{
-  background-color: #62aef5bd;
-}
-#sortBTN{
-  margin-top: -15px;
-  background-color: rgba(137, 43, 226, 0.26);
-}
-
-#sortBTN:hover{
-  background-color: rgba(137, 43, 226, 0.616);
-}
 
