@@ -113,6 +113,7 @@ function init() {
   transactions.forEach(addtransactionDOM);
   
   updateValues()
+  sortStuff()
 }
 init();
 
@@ -134,8 +135,9 @@ function sortStuff() {
     return b.amount - a.amount
   })
   
-  result.forEach(addtransactionDOM)
+  
   plusResult.forEach(addtransactionDOM)
+  result.forEach(addtransactionDOM)
 }
 
 const sortbtn = document.getElementById('sortBTN')
